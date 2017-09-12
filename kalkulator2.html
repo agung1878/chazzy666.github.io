@@ -1,0 +1,98 @@
+<html>
+
+<head>
+    <title>Html, Css & JavaScript</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
+        <style>
+            .header {
+                background-color: purple;
+                height: 50px;
+            }
+            
+            .content {
+                background-color: #ffffff;
+                height: 500px;
+                padding: 20px;
+            }
+            
+            .footer {
+                background-color: skyblue;
+                height: 20px;
+            }
+        </style>
+</head>
+<body>
+    <div class="header" style="color: white" >
+    <div class="header" style="font-size: 40">
+    <div class="header" style="text-align: center;">
+    <div class="header" style="font-style: italic;">
+    <div class="header" style=" font-family: fantasy;"">
+        Kalkulator Sederhana
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="content row">
+        <div class="col-md-6 col-sm-3">
+            <div class="panel panel-primary" style="color: red">
+                <div class="panel-heading" >
+                    <h1>Kalkulator</h1>
+                </div>
+                <div class="panel-body">
+                    <form action="/" method="GET">
+                        <div class="form-group">
+                            <label>Input 1</label>
+                            <input type="number" id="number1" class="form-control">
+                        </div>
+
+                        <div class="form-group">
+                            <label>Input 2</label>
+                            <input type="number" id="number2" class="form-control">
+                        </div>
+
+                        <button class="btn btn-primary" type="button" onclick="pertambahan()">Pertambahan</button>
+                        <button class="btn btn-primary" type="button" onclick="pengurangan()">Pengurangan</button>
+                        <button class="btn btn-primary" type="button" onclick="perkalian()">Perkalian</button>
+                        <button class="btn btn-primary" type="button" onclick="pembagian()">Pembagian</button>
+                        <button class="btn btn-primary" type="reset" value="Reset">Reset</button>
+            <div class="form-group">
+                            <label for="nama">Hasil</label>
+                            <input type="text" id="hasil"  class="form-control">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+function pertambahan() {
+   var input1 =  document.getElementById("number1").value;
+   var input2 =  document.getElementById("number2").value;
+   document.getElementById("hasil").value = parseInt(input1) + parseInt(input2);    
+}
+function pengurangan() {
+   var input1 =  document.getElementById("number1").value;
+   var input2 =  document.getElementById("number2").value;
+   document.getElementById("hasil").value = parseInt(input1) - parseInt(input2);    
+}
+function perkalian() {
+   var input1 =  document.getElementById("number1").value;
+   var input2 =  document.getElementById("number2").value;
+   document.getElementById("hasil").value = parseInt(input1) * parseInt(input2);    
+}
+function pembagian() {
+   var input1 =  document.getElementById("number1").value;
+   var input2 =  document.getElementById("number2").value;
+   document.getElementById("hasil").value = parseInt(input1) / parseInt(input2);    
+}
+</script>
+
+    <div class="footer" style="text-align: center;">
+        copyright 2017 @artivisi
+    </div>
+</body>
+
+</html>
